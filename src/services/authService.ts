@@ -1,4 +1,5 @@
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:3001/api/auth';
+// Vercel এ /api/auth/login, locally http://localhost:3001/api/auth/login
+const API_BASE = import.meta.env.VITE_API_URL || '/api/auth';
 
 export interface ApiUser {
   id: string;
@@ -21,17 +22,6 @@ export const loginUser = async (email: string, password: string): Promise<ApiUse
   });
   const data = await res.json();
   if (!res.ok) throw new Error(data.error || 'Login failed');
-  return data.user;
-};
-
-export const quickLoginUser = async (email: string): Promise<ApiUser> => {
-  const res = await fetch(`${API_BASE}/quick-login`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ email }),
-  });
-  const data = await res.json();
-  if (!res.ok) throw new Error(data.error || 'Quick login failed');
   return data.user;
 };
 
