@@ -1,0 +1,22 @@
+{
+  "users": [],
+  "clients": [],
+  "projects": [],
+  "tasks": [],
+  "tickets": [],
+  "invoices": [],
+  "payments": [],
+  "expenses": [],
+  "leads": [],
+  "contacts": [],
+  "agreements": [],
+  "activities": [
+    {
+      "id": "act-1789657369818",
+      "title": "User logged in",
+      "detail": "Asiful Islam (admin) authenticated",
+      "time": "Just now",
+      "type": "project"
+    }
+  ]
+}

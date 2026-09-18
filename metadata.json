@@ -1,0 +1,6 @@
+{
+  "name": "BusinessPro CRM",
+  "description": "Comprehensive Business CRM with Dashboard, Clients, Projects, Tasks, Tickets, Invoices, Payments, Expenses, Leads, Contacts, Agreements, and AI Assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
